@@ -3,77 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My First Web Page</title>
 </head>
 <body>
-    <h1> first Heading </h1>
-    this is something new to<b> visit here </b>please visit us again.
-    <p> this is a paragraph about human nature </p>
-    <strong> this is a strong text </strong>
-    <em> this is emphasized text </em>
-    <i> this is italic text </i>
-    <u> this is underlined text </u>
-    <mark> this is marked text </mark>
-    <h1>h<sub>2</sub>o</h1>
-    <h1>(a+b)<sup>2</sup>=a<sup>2</sup>+2ab+b<sup>2</sup></h1>
-    <h1> price is Rs-<del> 1000 </del> <ins> 500 </ins></h1>
-    <h1>List</h1>
-    <ul type="circle">
-        <li> html </li>
-        <li> css </li>
-        <li> javascript </li>
-    </ul>
-    <h1>Ordered List</h1>
-    <ol type="I">
-        <li> html </li>
-        <li> css </li>
-        <li> javascript </li>
-    </ol>
-    <h2> Nested List </h2>
-    <ul type="square">
-        <li> html </li>
-        <li> css </li>
-        <li> javascript
-            <ul type="circle">
-                <li> react </li>
-                <li> angular </li>
-                <li> vue </li>
+    <header>
+        <h1>Shourya Varshney</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>Hi, I am Shourya Varshney. I am a student who loves learning new things and creating simple web pages.</p>
+
+        <p>Visit <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a> to explore more information.</p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2b/Cartoon_Network_logo.png" alt="Cartoon Network logo">
+
+        <p>My favorite hobby is <strong>reading</strong> and <em>Coding</em> because they help me relax and enjoy creative time.</p>
+
+        <p>This is the first sentence of the paragraph.<br>This is the second sentence, separated by a line break.</p>
+
+        <blockquote>
+            Learning is a treasure that will follow its owner everywhere.
+            <cite>Chinese Proverb</cite>
+        </blockquote>
+
+        <h2>Student</h2>
+        <h3>Reading, music, and travel</h3>
+
+        <p>This word is <mark>highlighted</mark> and this note is <small>Updated recently</small>.</p>
+
+        <p>This sentence uses <strong>bold emphasis</strong> and <em>italic emphasis</em> to make the meaning clearer.</p>
+
+        <p>To print <code>Hello World</code> in JavaScript, use <code>console.log("Hello World");</code>.</p>
+
+        <p>This is a <span>creative</span> example with <span>three different</span> labels inside one <span>paragraph</span>.</p>
+
+        <p>My journey is <strong>full of curiosity</strong>, <em>steady growth</em>, <mark>bright ideas</mark>, and <small>daily learning</small>.<br>Every new step feels exciting and meaningful.</p>
+
+        <section>
+            <h2>About Me</h2>
+            <p>I enjoy exploring new ideas, learning technology, and sharing creative work in a simple way.</p>
+        </section>
+
+        <article>
+            <h2>My First Blog</h2>
+            <p>Today I learned how HTML structure can turn a simple page into a well-organized story.</p>
+        </article>
+
+        <aside>
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
             </ul>
-        </li>
-    </ul>
-    <h1> Definition List </h1>
-    <dl>
-        <dt> html </dt>
-        <dd> html is a markup language </dd>
-        <dt> css </dt>
-        <dd> css is a style sheet language </dd>
-        <dt> javascript </dt>
-        <dd> javascript is a programming language </dd>
-    </dl>
-    <h1> Table </h1>
-    <table border="5">
-        <tr>
-            <th> Name </th>
-            <th> Age </th>
-            <th> Gender </th>
-        </tr>
-        <tr>
-            <td> John </td>
-            <td> 25 </td>
-            <td> Male </td>
-        </tr>
-    </table>
-    <h2> Form </h2>
-    <form action="submit.php" method="post">
-        <label for="name"> Name: </label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email"> Email: </label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="password"> Password: </label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Submit">
-    </form>
-    <h2> hyperlink </h2>
-    <a href="./About.html"> <img src="https://html.com/wp-content/uploads/flamingo.webp" alt="Placeholder Image" > Go to about us part </a>
+        </aside>
+    </main>
+
+    <section>
+        <h2>Table</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>Shourya</td>
+                <td>20</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>Aarav</td>
+                <td>19</td>
+                <td>Lucknow</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Shourya Varshney</p>
+    </footer>
 </body>
 </html>
