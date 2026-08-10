@@ -1,0 +1,81 @@
+1. Frontend, Backend, and Full-Stack Development
+Web development is split into distinct layers that dictate how user interfaces interact with underlying logic and data storage. 
+Frontend Development: Focuses entirely on the user-facing side of an application. It deals with visual layouts, interactive elements, user experience, and animations using HTML, CSS, and JavaScript.
+Real-World Example: An E-commerce Product Page layout, featuring the item images, the styling of text prices, and an interactive "Add to Cart" button animation. 
+Backend Development: Focuses on data processing, server logic, authentication, and application infrastructure. It runs behind the scenes using languages like Python, Node.js, Java, or Go.
+Real-World Example: The system that processes credit card charges, updates store inventory, and sends confirmation emails after clicking purchase. 
+Full-Stack Development: Encompasses both front-end presentation and back-end structural logic. Full-stack developers can seamlessly bridge the gap by building entire web features from the database query to the final visual component.
+Real-World Example: An engineer who creates a Flight Booking System by designing both the seating arrangement interface and coding the reservation ticket logic. 
+
+2. Client-Server Model
+The client-server model forms the foundation of web communications, splitting tasks between service requesters (clients) and service providers (servers). 
+Client: The user device and browser initiating interactions.
+Request: Network message asking for resources via standard rules (HTTP).
+Server: Powerful computing machine processing application logical requests.
+Response: The requested file assets or status payloads sent back to users. 
+
+3. How a Browser Requests and Displays a Web Page
+The browser coordinates a multi-step networking and rendering sequence to pull digital web files onto a physical user monitor.
+[User URL Input] ──> [DNS Lookup] ──> [TCP Handshake] ──> [HTTP Request]
+                                                                │
+[Render Screen] <── [Execute JS] <── [Parse HTML/CSS] <── [HTTP Response]
+DNS Lookup: The user inputs a domain name (e.g., google.com). The browser contacts a Domain Name System (DNS) server to convert the human-friendly URL text into a numerical machine IP address. 
+TCP Connection: The browser initiates a connection with the server IP using a reliable 3-way handshake protocol to ensure a stable data pipeline. 
+HTTP Request: The browser submits a standardized HTTP request payload requesting the source page code.
+Server Response: The target web server processes the request and responds with a status message and raw files (HTML, CSS, JavaScript). 
+Parsing & Styling: The browser parses raw text data into an internal Document Object Model (DOM) structure, while overlaying a CSS Object Model (CSSOM) layer to map visual styling. 
+Script Execution: The browser's custom execution script engines evaluate the dynamic JavaScript programs to handle animations or interactive components. 
+Painting & Display: The rendering layout engines combine data elements into actual coordinate pixels and paint the finalized imagery on screen. 
+
+4. Web Development Environment Tools
+Setting up an efficient environment requires distinct tools to write, run, maintain, and track code pipelines. 
+Tool Category	Core Tool Example	Primary Architectural Purpose
+Code Editor	Visual Studio Code	A text workspace environment optimized for writing, formatting, and highlighting structural syntax.
+Web Browser	Google Chrome	Provides a sandboxed area to execute code and use built-in Developer Tools to inspect live styles or console bugs.
+Runtime Environment	Node.js	An engine ecosystem that lets developers execute JavaScript directly on a computer terminal outside a web browser.
+Package Manager	npm	An integrated registry dashboard allowing engineers to instantly download, share, and track reusable open-source library code modules.
+Version Control	Git	A local file system tracking framework to save history, branch features, and prevent developers from overwriting code.
+
+5. Web Servers
+A web server is specialized computer software (and the hardware hosting it) that stores website assets and serves them out over the internet using communication standards like HTTP or HTTPS. 
+Nginx: A high-performance web server known for reverse proxying, high concurrency limits, and caching.
+Apache HTTP Server: A flexible, modular, open-source server structure that has powered the internet for decades.
+Microsoft IIS: A closed-ecosystem corporate server engine strictly integrated with Windows Server systems. 
+
+6. Development Team Project Roles
+Software projects rely on specialized individuals collaborating across separate tiers of the application framework.
+Frontend Developer: Transforms static design mockups into active interactive applications. They optimize visual layouts, build interface components, and manage client-side state logic.
+Backend Developer: Constructs underlying web servers, coordinates database pipelines, maps security permissions, and designs application programming interfaces (APIs).
+Database Administrator (DBA): Designs database schemas, manages user permissions, monitors data scaling speeds, and handles backup restoration routines. 
+
+7. VS Code Configuration Guide
+Setting up Visual Studio Code for basic web programming involves installing extensions to streamline the development cycle. 
+Download the Editor: Install the matching executable binary file from the Official Visual Studio Code Portal.
+Install Essential Extensions: Open the extensions tab (Ctrl+Shift+X) and add:
+Live Server (by Ritwick Dey): Launches a local development server with live reload for HTML/CSS.
+Prettier: Automates code formatting on file save.
+ESLint: Highlights javascript programming syntax errors in real time. 
+Project Organization: Open an empty folder directory, create three foundational baseline documents (index.html, style.css, script.js), and link them together in your markup code. 
+(Note: Since I am an AI text assistant operating without a graphical monitor, I am unable to generate real-time physical screenshots of local software installations. The configuration follows standard setup layouts used across production development environments).
+
+8. Static vs. Dynamic Websites
+Websites serve files either as pre-built flat files or as data compiled on-demand in real-time. 
+Static Websites: Deliver identical pre-rendered flat files to every single user directly from a storage directory. They do not process server logic or connect to relational database tables.
+Real-World Example: A small local bakery's static home page displaying business operating hours, location directions, and a physical menu. 
+Dynamic Websites: Generate custom page code layouts on-the-fly for every individual user by running real-time database queries and application backend scripts.
+Real-World Example: A Netflix Dashboard, which continuously changes its content recommendations depending on your personal user watch history. 
+
+9. Web Browsers and Rendering Engines
+Browsers rely on underlying engine systems to parse code markup documents and draw layout configurations onto a user screen. 
+Google Chrome: Uses the Blink rendering engine. Blink splits operations across multiple processor threads to run websites isolated from each other.
+Apple Safari: Uses the WebKit rendering engine. WebKit balances hardware battery efficiency and rendering layouts inside Apple ecosystems.
+Mozilla Firefox: Uses the Gecko rendering engine. Gecko is an open-source engine structured around standard compliance and privacy.
+Microsoft Edge: Runs on the Blink engine. It provides rendering performance matching Chrome while integrating Windows-specific enterprise modifications.
+Opera: Runs on the Blink engine. It optimizes the core rendering framework to power built-in tools like integrated sidebars, resource limitations controls, and localized web tools. 
+
+10. Web Architecture Flow
+Modern web architecture layers functional components sequentially, ensuring structured communications pass reliably between front-end interfaces and back-end storage nodes. 
+Client Interface (Front-End): Browsers display layouts and compile user clicks into structured event tasks.
+API Layer (The Bridge): Application Programming Interfaces format access rules, securely passing structural request bodies across different architectural zones.
+Application Server (Back-End): Processes underlying operational logic, applies security rules, and manages access permissions.
+Database (Storage Layer): Securely stores organized tables and structural data fields, returning records back to the application server when queried. 
