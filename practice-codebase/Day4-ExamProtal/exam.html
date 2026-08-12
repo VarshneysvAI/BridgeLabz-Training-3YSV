@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Examination Portal</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #d8e7ff;
+            font-family: Arial, sans-serif;
+            color: #1e2f4f;
+        }
+        .page-table {
+            width: 100%;
+            max-width: 980px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
+        }
+        .header {
+            background-color: #1f75d4;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+        .nav-row td {
+            background-color: #5aa7f4;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .nav-row a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 0.95rem;
+        }
+        .info-bar {
+            background-color: #8cbdee;
+            color: #083b7b;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+        .content-row td {
+            vertical-align: top;
+            padding: 18px;
+        }
+        .content-main {
+            width: 68%;
+            border-right: 1px solid #d3e2f7;
+        }
+        .sidebar {
+            width: 32%;
+            background-color: #eff7ff;
+        }
+        .content-main h2,
+        .sidebar h2 {
+            margin: 0 0 14px;
+            color: #163560;
+            font-size: 1.3rem;
+        }
+        .intro-line {
+            display: inline-block;
+            width: 150px;
+            height: 10px;
+            background-color: #4da5ff;
+            margin-bottom: 14px;
+        }
+        .content-main p {
+            line-height: 1.7;
+            margin: 10px 0;
+            font-size: 0.95rem;
+        }
+        .feature-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        .feature-table td {
+            padding: 8px 0;
+            vertical-align: top;
+        }
+        .feature-table .label {
+            width: 28%;
+            font-weight: bold;
+            color: #234c7b;
+        }
+        .team-box {
+            border: 1px solid #c7dbff;
+            background-color: #e9f2ff;
+            padding: 16px;
+            border-radius: 5px;
+        }
+        .team-box h2 {
+            margin-top: 0;
+            border-bottom: 1px solid #c7dbff;
+            padding-bottom: 8px;
+        }
+        .team-photo {
+            display: block;
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 12px;
+            border: 1px solid #aac6f4;
+            background-color: #ffffff;
+            line-height: 90px;
+            text-align: center;
+            color: #7a8aa8;
+            font-size: 0.85rem;
+        }
+        .team-details {
+            font-size: 0.95rem;
+            color: #1f3561;
+            text-align: center;
+        }
+        .team-details b {
+            display: block;
+            margin-top: 8px;
+        }
+        .footer {
+            background-color: #1f61b1;
+            color: #eef5ff;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 0.94rem;
+        }
+        marquee {
+            display: block;
+            margin: 0 auto;
+            padding: 6px 12px;
+            color: #0b1f4b;
+            font-weight: bold;
+            background: rgba(255,255,255,0.45);
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <table class="page-table" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="header" colspan="2">
+                <h1>Smart Examination Portal</h1>
+            </td>
+        </tr>
+        <tr class="nav-row">
+            <td colspan="2">
+                <a href="#home"></a>
+                <a href="#about"></a>
+                <a href="#courses"></a>
+                <a href="#schedule"></a>
+                <a href="#results"></a>
+                <a href="#gallery"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="info-bar">
+                <marquee behavior="scroll" direction="left" scrollamount="5">Welcome to Smart Examination Portal - Learn, Test, Grow!</marquee>
+            </td>
+        </tr>
+        <tr class="content-row">
+            <td class="content-main">
+                <div class="intro-line"></div>
+                <h2>Welcome to Smart Examination Portal</h2>
+                <p>The Smart Examination Portal offers a modern and efficient way to conduct online tests. Our platform supports interactive assessments, instant grading, and detailed analytics for both students and instructors.</p>
+                <p>Whether you are preparing for academic exams or professional certifications, our system helps you practice and perform efficiently. We believe in empowering learners through technology-driven education and seamless evaluation.</p>
+                <table class="feature-table">
+                    <tr>
+                        <td class="label">Assessment Mode</td>
+                        <td>Online tests, quizzes, and mock exams with auto-grading.</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Analytics</td>
+                        <td>Detailed score reports, progress tracking, and performance insights.</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Support</td>
+                        <td>24/7 student assistance and instructor support for exam preparation.</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="sidebar">
+                <div class="team-box">
+                    <h2>Our Team</h2>
+                    <marquee behavior="alternate" direction="up" height="140" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
+                        <div>
+                            <span class="team-photo">Photo</span>
+                            <div class="team-details">
+                                Rahul Mehta<br>
+                                Technical Lead<br><br>
+                                Neha Gupta<br>
+                                Exam Coordinator
+                            </div>
+                        </div>
+                    </marquee>
+                    <p style="margin-top: 14px; font-size: 0.94rem; line-height: 1.6; color: #233d6f;">Our team is committed to building a secure and dependable exam experience. We use the best technology and methods to support learners and educators.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer" colspan="2">
+                &copy; 2025 Smart Examination Portal | All Rights Reserved
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
