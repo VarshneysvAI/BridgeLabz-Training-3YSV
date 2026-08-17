@@ -1,0 +1,32 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    #main-title{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        text-align: center;
+        background-color: rgb(154, 153, 184);
+        padding: 20px;
+    }
+    .content{
+            color: rgb(210, 163, 163);
+            font-size: 20px;
+            align-items: center;
+            text-align: center;
+        }
+        .box{
+            background-color: rgb(154, 153, 184);
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .box h1{
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            text-align: center;
+        }
