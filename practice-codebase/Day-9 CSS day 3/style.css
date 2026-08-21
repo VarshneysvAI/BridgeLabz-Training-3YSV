@@ -1,0 +1,12 @@
+.container{
+    border: 5px double red;
+    width: 80%;
+    color: white;
+    padding: 20px 50px;
+    margin: 20px auto;
+    font-size: 10px;
+    border-radius: 10px 0px 10px 0px;
+    background-size: cover;
+    background-image: url("");
+
+}
