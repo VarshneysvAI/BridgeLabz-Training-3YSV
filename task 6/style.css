@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffefe;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  width: 450px;
+  height: 550px;
+  background: #f3f3f3;
+  border-radius: 26px;
+  box-shadow: 0 20px 30px rgba(86, 3, 3, 0.18);
+  overflow: hidden;
+  position: relative;
+}
+
+.product-stage {
+  position: relative;
+  height: 290px;
+  background: #f72828;
+  overflow: hidden;
+}
+
+.offer-badge {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  background: #eb2a2a;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.05rem;
+  padding: 10px 16px;
+  border-radius: 14px;
+  z-index: 2;
+}
+
+.wishlist {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  font-size: 2.1rem;
+  cursor: pointer;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.shoe-image {
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  width: 430px;
+  height: 310px;
+  max-width: 110%;
+  transform: translateX(-50%) scale(1.12);
+  object-fit: contain;
+  filter: drop-shadow(0 18px 18px rgba(136, 0, 0, 0.32));
+}
+
+.details {
+  padding: 18px 18px 10px;
+  background: #f2f2f2;
+}
+
+.category {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: #0a78e8;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 20px;
+  line-height: 1.05;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.stars {
+  color: #f5b000;
+  font-size: 1.9rem;
+  letter-spacing: 4px;
+}
+
+.count {
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.price {
+  font-weight: 900;
+  line-height: 1;
+}
+
+.price.current {
+  color: #141414;
+  font-size: 2.1rem;
+}
+
+.price.old {
+  color: #878787;
+  font-size: 1.7rem;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.cart-btn {
+  width: 80%;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  border: none;
+  border-radius: 18px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 20px 24px;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: min(90vw, 400px);
+  }
+
+  .product-stage {
+    height: 240px;
+  }
+
+  .offer-badge {
+    left: 14px;
+    top: 14px;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .wishlist {
+    right: 14px;
+    top: 14px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.7rem;
+  }
+
+  .shoe-image {
+    width: 350px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .stars {
+    font-size: 1.5rem;
+  }
+
+  .price.current {
+    font-size: 1.8rem;
+  }
+
+  .price.old {
+    font-size: 1.35rem;
+  }
+}
