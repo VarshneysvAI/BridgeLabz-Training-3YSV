@@ -1,0 +1,33 @@
+.box {
+    height: 100px;
+    width: 100px;
+    
+    border-radius: 50%;
+    background-color: red;
+    justify-content: center;
+    /* transition: transform 0.5s ease-in-out 0s; */
+    animation: ballbounce 2s ease infinite;
+    
+}
+/* .box:hover {
+    transform: translateX(200px) rotate(90deg) scale(2);
+} */
+ /* @keyframes moveAndRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ } */
+@keyframes ballbounce {
+    0%{
+        transform: translateY(600px) skew(10deg,10deg);
+    }
+    50%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(600px);
+    }
+}
