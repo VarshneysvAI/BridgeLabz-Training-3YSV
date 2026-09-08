@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1f2937;
+}
+
+header {
+  text-align: center;
+  padding: 32px 20px 10px;
+}
+
+h1 {
+  margin: 0;
+  color: #111827;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 30px;
+}
+
+.card {
+  width: 250px;
+  padding: 24px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.card-one {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card-two {
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.18);
+}
+
+.card-three {
+  box-shadow: 0 0 22px rgba(59, 130, 246, 0.35);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-one:hover {
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-two:hover {
+  box-shadow: 0 22px 36px rgba(15, 23, 42, 0.25);
+}
+
+.card-three:hover {
+  box-shadow: 0 0 28px rgba(59, 130, 246, 0.5);
+}

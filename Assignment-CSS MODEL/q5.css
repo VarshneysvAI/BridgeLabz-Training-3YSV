@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.demo-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.selector-demo {
+  width: min(720px, 100%);
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* Attribute selectors */
+input[type="text"] {
+  width: 220px;
+  padding: 10px 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  margin: 10px 0 20px;
+}
+
+/* [href^="https"] matches only external links */
+a[href^="https"] {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Pseudo-classes */
+a:hover,
+input:focus {
+  outline: none;
+}
+
+input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.item-list li:nth-child(odd) {
+  background: #dbeafe;
+}
+
+.item-list li:nth-child(even) {
+  background: #ecfeff;
+}
+
+.item-list li:hover {
+  background: #bfdbfe;
+}
+
+/* Pseudo-elements */
+.item-list li::before {
+  content: "• ";
+  color: #2563eb;
+}
+
+.box-group > p::after {
+  content: " ✓";
+  color: green;
+}
+
+/* Combinators */
+.menu > a {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.box-group + .field-label {
+  display: block;
+  margin-top: 8px;
+}
+
+.field-label ~ input {
+  margin-top: 8px;
+}
