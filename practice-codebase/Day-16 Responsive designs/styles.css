@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(82, 173, 212);
+    justify-content: center;
+}
+@media (max-width: 660px){
+    .container{
+        flex-direction: column;
+        background-color: rgb(212, 140, 82);
+    }
+}
