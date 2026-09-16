@@ -1,0 +1,10 @@
+/* Q9: Combined pseudo-classes, transitions and transforms */
+body{font-family:Segoe UI,Arial,sans-serif;margin:20}
+.examples{display:flex;gap:12px}
+.fx{padding:10px 16px;border-radius:10px;border:0;background:#2b88ff;color:#fff;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,background .2s}
+.fx:hover{transform:scale(1.06);box-shadow:0 12px 30px rgba(43,136,255,.18);background:#1a6fe6}
+.fx:active{transform:scale(.98)}
+.fx:focus{outline:3px solid rgba(43,136,255,.16);outline-offset:3px}
+.fx.soft{background:#eef6ff;color:#0a3a66}
+.fx.soft:hover{transform:scale(1.03);background:#d7ebff}
+.fx.strong{box-shadow:0 6px 18px rgba(0,0,0,.08)}

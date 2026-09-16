@@ -1,0 +1,13 @@
+/* Q5: Styled buttons with hover, active, focus and disabled states */
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;margin:20px}
+.buttons{display:flex;gap:14px;align-items:center}
+.btn{padding:10px 16px;border-radius:8px;border:0;cursor:pointer;font-weight:600;transition:transform .12s ease,box-shadow .12s ease,background .12s}
+.btn:focus{outline:3px solid rgba(0,120,212,.16);outline-offset:3px}
+.btn:active{transform:translateY(1px)}
+.btn[disabled],.btn:disabled{opacity:.5;cursor:not-allowed;box-shadow:none}
+.btn-primary{background:linear-gradient(180deg,#2b88ff,#1b6fe6);color:#fff;box-shadow:0 6px 18px rgba(43,136,255,.18)}
+.btn-primary:hover{transform:scale(1.03)}
+.btn-secondary{background:#eef6ff;color:#0b3f77;border:1px solid #d3e7ff}
+.btn-outline{background:transparent;border:2px solid #2b88ff;color:#2b88ff}
+.btn-outline:hover{background:#2b88ff;color:#fff}

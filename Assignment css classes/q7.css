@@ -1,0 +1,9 @@
+/* Q7: Simple UI components styled in a card */
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#f7fbff,#eef6ff);height:100vh;display:flex;align-items:center;justify-content:center;margin:0}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 10px 30px rgba(20,30,60,.08);width:320px}
+.controls{display:flex;gap:8px;align-items:center}
+input[type=search]{flex:1;padding:10px;border-radius:8px;border:1px solid #e6eef9}
+select{padding:8px;border-radius:8px;border:1px solid #e6eef9}
+.btn{padding:9px 12px;border-radius:8px;border:0;background:#2b88ff;color:#fff;cursor:pointer}
+input:focus,select:focus,.btn:focus{outline:3px solid rgba(43,136,255,.12);outline-offset:2px}

@@ -1,0 +1,10 @@
+/* Q2: Tooltips built with pure CSS */
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;margin:0;background:#f6f9ff;color:#111}
+.center{text-align:center}
+.row{display:flex;gap:24px;align-items:center;justify-content:center}
+.tip{position:relative;font-size:28px;padding:12px;border-radius:8px;background:#fff;border:1px solid #e5e9f2;cursor:default}
+.tip::after{content:attr(data-tip);position:absolute;left:50%;transform:translateX(-50%) translateY(8px);bottom:100%;white-space:nowrap;background:rgba(0,0,0,.85);color:#fff;padding:8px 10px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .3s ease-in-out,transform .3s ease-in-out}
+.tip:hover::after,.tip:focus::after{opacity:1;transform:translateX(-50%) translateY(0)}
+.tip::before{content:'';position:absolute;left:50%;transform:translateX(-50%);bottom:96%;border-width:6px;border-style:solid;border-color:transparent transparent rgba(0,0,0,.85) transparent;opacity:0;transition:opacity .3s}
+.tip:hover::before{opacity:1}

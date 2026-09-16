@@ -1,0 +1,14 @@
+/* Q6: Animations (moving box, bouncing ball, color-changing text) */
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f7fb}
+.wrap{display:flex;gap:28px;align-items:center}
+.box{width:80px;height:80px;background:#2b88ff;border-radius:8px}
+.move{animation:slide 2.5s ease-in-out infinite alternate;animation-delay:.2s}
+.ball{width:48px;height:48px;background:#ff6b6b;border-radius:50%;box-shadow:0 6px 14px rgba(0,0,0,.12)}
+.bounce{animation:bounce 1s cubic-bezier(.28,.84,.42,1) infinite}
+.text{font-weight:700;font-size:18px}
+.color-change{animation:colors 4s ease-in-out infinite alternate;animation-iteration-count:infinite}
+
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(60px) rotate(6deg)}}
+@keyframes bounce{0%{transform:translateY(0)}50%{transform:translateY(-40px)}100%{transform:translateY(0)}}
+@keyframes colors{0%{color:#2b88ff}50%{color:#ffb86b}100%{color:#9b6bff}}

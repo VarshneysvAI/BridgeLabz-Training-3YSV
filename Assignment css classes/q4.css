@@ -1,0 +1,20 @@
+/* Q4: CSS Selectors Practice
+   - element, class, ID, attribute
+   - child, adjacent, general sibling, descendant
+*/
+* { box-sizing: border-box; }
+body { font-family: Segoe UI, Arial, sans-serif; margin: 18px; color: #111; }
+/* element selector */
+p { line-height: 1.6; }
+/* class selector */
+.highlight { background: #fff9db; padding: 8px; border-radius: 6px; }
+/* ID selector */
+#unique { color: #222; }
+/* attribute selector */
+a[data-role] { color: #0b65c2; text-decoration: underline; }
+/* child combinator */
+.parent > .child { padding: 8px; border: 1px dashed #cfcfcf; margin-top: 8px; }
+/* adjacent sibling */
+.child + .sibling { font-weight: 600; color: #444; }
+/* general sibling */
+.child ~ span { font-style: italic; }
