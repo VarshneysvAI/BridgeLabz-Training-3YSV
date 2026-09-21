@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #fef3c7, #f8fafc);
+  color: #1f2937;
+}
+
+.typography-demo {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+}
+
+.text-box {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+@media (max-width: 700px) {
+  .text-box {
+    padding: 25px 15px;
+  }
+
+  h1,
+  p {
+    line-height: 1.5;
+  }
+}
