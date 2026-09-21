@@ -1,0 +1,19 @@
+body {
+  background: #fffaf3;
+  font-family: Arial, sans-serif;
+}
+
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.list-group-item.active {
+  background: #1f2937;
+  border-color: #1f2937;
+}
+
+.figure img {
+  max-height: 360px;
+  object-fit: cover;
+}

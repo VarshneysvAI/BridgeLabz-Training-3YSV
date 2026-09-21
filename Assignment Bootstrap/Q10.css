@@ -1,0 +1,22 @@
+body {
+  background: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+.carousel-item img {
+  height: 520px;
+  object-fit: cover;
+}
+
+.progress {
+  background: #dfe7f1;
+}
+
+.progress-bar {
+  font-weight: 700;
+  line-height: 22px;
+}
+
+footer {
+  background: #111827 !important;
+}

@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.profile-photo {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 18px;
+}
+
+.btn-dark {
+  background: #111827;
+  border-color: #111827;
+}
+
+.btn-outline-dark:hover {
+  background: #111827;
+  color: #fff;
+}

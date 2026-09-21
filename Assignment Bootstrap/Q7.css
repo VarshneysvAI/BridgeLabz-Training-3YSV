@@ -1,0 +1,18 @@
+body {
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  border-radius: 18px;
+}
+
+.list-group-item {
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.btn-success {
+  background: #198754;
+  border-color: #198754;
+}

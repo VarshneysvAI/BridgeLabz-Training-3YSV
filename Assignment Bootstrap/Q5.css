@@ -1,0 +1,44 @@
+:root {
+  --bs-primary: #7c3aed;
+  --bs-secondary: #f59e0b;
+  --bs-font-sans-serif: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #f8f5ff;
+  font-family: var(--bs-font-sans-serif);
+}
+
+.site-header {
+  background: linear-gradient(135deg, #2e1065, #4c1d95);
+}
+
+.brand,
+.card-title {
+  font-family: "Playfair Display", serif;
+}
+
+.nav-link,
+.text-bg-primary,
+.btn-primary {
+  background: var(--bs-primary) !important;
+}
+
+.btn-primary {
+  border-color: var(--bs-primary);
+}
+
+.site-footer {
+  background: #1f2937;
+  color: #fff;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 260px;
+  object-fit: cover;
+}

@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #081426, #112747 45%, #1e3a5f);
+  color: #ffffff;
+}
+
+.site-header {
+  background: rgba(7, 20, 35, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+.hero-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  background: rgba(125, 211, 252, 0.2);
+  color: #dff6ff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-box strong {
+  font-size: 1.3rem;
+}
+
+.progress {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #7dd3fc, #38bdf8);
+}
+
+.btn-primary {
+  background-color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+.btn-outline-light:hover {
+  background: #fff;
+  color: #081426;
+}
