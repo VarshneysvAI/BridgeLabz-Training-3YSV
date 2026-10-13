@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>JAVA SCRIPT</h1>
+    <button onclick="createOTP()">Generate OTP</button>
+
+</body>
+<script>
+    // console.log("Hello World")
+
+    //global scope
+    // var a = "hello"
+    // {
+    //     console.log(a);
+    // }
+    // console.log(a);
+
+    // //functional scope
+    // {
+    //     var a = "hello"
+    //     console.log(a);
+    // }
+    // console.log(a);
+
+    // let name = "Shourya";
+    // let age  = 20;
+    // // console.log("my name is"+name+"my age is:"+age)
+    // //using string template
+    // // let result = `my name is ${name} and my age is ${age}`
+    // // console.log(result)
+
+    //String methods
+    // let password = "    sfasaggafsdfaf     "
+    
+    // let a = 4.5;
+    // console.log(Math.ceil(a))
+    // console.log(Math.floor(a))
+    // console.log(Math.round(a))
+    // console.log(Math.random())
+    // let num = Math.floor(Math.random()*200)+1
+    // let num1 = Math.floor(Math.random()*100)+500
+
+    // console.log(num)
+    // console.log(num1)
+    let max = 100;
+    let min = 1;
+    let num = Math.floor(Math.random()*(max-min))+min;
+    console.log(num);
+    function createOTP(){
+        let max = 999999;
+        let min = 100000;
+        let num = Math.floor(Math.random()*(max-min))+min;
+        console.log(num);
+    }
+    createOTP();
+
+</script>
+</html>
