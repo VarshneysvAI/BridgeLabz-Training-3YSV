@@ -47,17 +47,22 @@
 
     // console.log(num)
     // console.log(num1)
-    let max = 100;
-    let min = 1;
-    let num = Math.floor(Math.random()*(max-min))+min;
-    console.log(num);
-    function createOTP(){
-        let max = 999999;
-        let min = 100000;
-        let num = Math.floor(Math.random()*(max-min))+min;
-        console.log(num);
+    // let max = 100;
+    // let min = 1;
+    // let num = Math.floor(Math.random()*(max-min))+min;
+    // console.log(num);
+    // function createOTP(){
+    //     let max = 999999;
+    //     let min = 100000;
+    //     let num = Math.floor(Math.random()*(max-min))+min;
+    //     console.log(num);
+    // }
+    // createOTP();
+    //function generate radom hex color;
+    function generateRandomHexColor() {
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        return `#${randomColor}`;
     }
-    createOTP();
-
+    generateRandomHexColor();
 </script>
 </html>
