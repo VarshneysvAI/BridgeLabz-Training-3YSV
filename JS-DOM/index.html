@@ -7,10 +7,24 @@
 </head>
 <body>
     <h1>Welcome to my Website</h1>
+    <div class="box">
+        <div class="container">
+            <h2>Hover over this box to change its background color</h2>
+        </div>
+
+    </div>
 </body>
 <script>
-    let fun =()=>{
-        
-    }
+    console.log("Hello, World!");
+    let container = document.querySelector('.container');
+    document.addEventListener('mouseup', function() {
+        let arr = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'];
+        let ans = '#';
+        for (let i = 0; i < 6; i++) {
+            let randomIndex = Math.floor(Math.random() * arr.length);
+            ans += arr[randomIndex];
+        }
+        container.style.backgroundColor = ans;
+    });
 </script>
 </html>
