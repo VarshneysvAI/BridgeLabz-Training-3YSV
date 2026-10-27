@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+
+    <style>
+      .btn-container {
+        width: 400px;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .btn {
+        width: 100px;
+      }
+
+      .input {
+        width: 340px;
+        padding: 30px;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input class="input" disabled />
+    <div class="btn-container">
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn">/</button>
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn">*</button>
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn">-</button>
+      <button class="btn">0</button>
+      <button class="btn">+</button>
+      <button class="btn">=</button>
+      <button class="btn">CE</button>
+    </div>
+  </body>
+
+  <script>
+    const inputEL = document.querySelector(".input");
+    const btnsEl = document.querySelectorAll(".btn"); //[btn,btn]
+
+    btnsEl.forEach((ele) => {
+      ele.addEventListener("click", (e) => {
+        if (e.target.innerHTML == "=") {
+          let ans = eval(inputEL.value);
+          inputEL.value = ans;
+          return;
+        }
+
+        if (e.target.innerHTML == "CE") {
+          inputEL.value = "";
+          return;
+        }
+
+        inputEL.value += e.target.innerHTML;
+      });
+    });
+
+    document.addEventListener("keydown", (e) => {
+     
+      if (e.key == "=" || e.key == "Enter") {
+        inputEL.value = eval(inputEL.value);
+        return;
+      }
+
+      if (e.key == "Backspace") {
+        inputEL.value = inputEL.value.slice(0, -1);
+        return;
+      }
+
+      if (
+        e.key == "0" ||
+        e.key == "1" ||
+        e.key == "2" ||
+        e.key == "3" ||
+        e.key == "4" ||
+        e.key == "5" ||
+        e.key == "6" ||
+        e.key == "7" ||
+        e.key == "8" ||
+        e.key == "9"||
+        e.key == "+"||
+        e.key == "/"||
+        e.key == "-"||
+        e.key == "*"
+      )
+        inputEL.value += e.key;
+    });
+  </script>
+</html>
