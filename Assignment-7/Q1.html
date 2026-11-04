@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 7 - JavaScript Events</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Assignment 7</h1>
+
+      <section>
+        <h2>1. Dynamic Product List Manager</h2>
+        <input id="product-input" type="text" placeholder="Product name" />
+        <button id="add-product-button" type="button">Add Product</button>
+        <ul id="product-list"></ul>
+      </section>
+
+      <section>
+        <h2>2. Live Character Counter</h2>
+        <textarea id="character-textarea" maxlength="100" rows="4" placeholder="Type up to 100 characters"></textarea>
+        <p id="character-counter">100 characters remaining</p>
+        <button id="reset-character-button" type="button">Reset</button>
+      </section>
+
+      <section>
+        <h2>3. Multi-Step Form</h2>
+        <form id="multi-step-form" novalidate>
+          <div class="form-step active" data-step="1">
+            <label for="step-name">Name</label>
+            <input id="step-name" name="name" type="text" />
+            <span class="error" id="step-name-error"></span>
+          </div>
+          <div class="form-step" data-step="2">
+            <label for="step-email">Email</label>
+            <input id="step-email" name="email" type="email" />
+            <span class="error" id="step-email-error"></span>
+          </div>
+          <div class="form-step" data-step="3">
+            <label for="step-password">Password</label>
+            <input id="step-password" name="password" type="password" />
+            <span class="error" id="step-password-error"></span>
+          </div>
+          <div>
+            <button id="multi-step-back" type="button">Back</button>
+            <button id="multi-step-next" type="button">Next</button>
+          </div>
+        </form>
+        <p id="multi-step-summary"></p>
+      </section>
+
+      <section>
+        <h2>4. Theme Switcher</h2>
+        <button class="theme-button" data-theme-value="light" type="button">Light</button>
+        <button class="theme-button" data-theme-value="dark" type="button">Dark</button>
+        <button class="theme-button" data-theme-value="blue" type="button">Blue</button>
+      </section>
+
+      <section>
+        <h2>5. Image Gallery</h2>
+        <div class="gallery" id="image-gallery">
+          <img src="https://picsum.photos/id/1015/400/250" alt="Mountain landscape" />
+          <img src="https://picsum.photos/id/1025/400/250" alt="Dog portrait" />
+          <img src="https://picsum.photos/id/1035/400/250" alt="Forest landscape" />
+          <img src="https://picsum.photos/id/1043/400/250" alt="River landscape" />
+          <img src="https://picsum.photos/id/1062/400/250" alt="Beach landscape" />
+          <img src="https://picsum.photos/id/1074/400/250" alt="City landscape" />
+        </div>
+        <div class="modal" id="image-modal">
+          <div class="modal-content" id="modal-content">
+            <img id="modal-image" src="" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. Real-Time Student Filter</h2>
+        <input id="student-search" type="search" placeholder="Search students" />
+        <p id="no-results-message" hidden>No results found</p>
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Branch</th><th>CGPA</th></tr>
+          </thead>
+          <tbody id="student-table-body">
+            <tr><td>Ananya</td><td>Computer Science</td><td>9.2</td></tr>
+            <tr><td>Rahul</td><td>Electronics</td><td>8.6</td></tr>
+            <tr><td>Meera</td><td>Information Technology</td><td>9.0</td></tr>
+            <tr><td>Vikram</td><td>Mechanical</td><td>7.9</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>7. Mouse Path and Coordinates</h2>
+        <span id="mouse-coordinates">Move inside the box.</span>
+        <div id="coordinate-box"></div>
+      </section>
+
+      <section>
+        <h2>8. Custom Dropdown</h2>
+        <div class="dropdown" id="custom-dropdown">
+          <button id="dropdown-button" type="button">Select a branch</button>
+          <div id="dropdown-options">
+            <button type="button" data-option="Computer Science">Computer Science</button>
+            <button type="button" data-option="Electronics">Electronics</button>
+            <button type="button" data-option="Mechanical">Mechanical</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>9. Form Submit Blocker</h2>
+        <form id="validation-form" novalidate>
+          <div class="field">
+            <label for="validation-name">Name</label>
+            <input id="validation-name" name="name" type="text" />
+            <span class="error" id="validation-name-error"></span>
+          </div>
+          <div class="field">
+            <label for="validation-email">Email</label>
+            <input id="validation-email" name="email" type="text" />
+            <span class="error" id="validation-email-error"></span>
+          </div>
+          <div class="field">
+            <label for="validation-password">Password</label>
+            <input id="validation-password" name="password" type="password" />
+            <span class="error" id="validation-password-error"></span>
+          </div>
+          <button type="submit">Submit</button>
+          <p id="validation-success"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="Q1.js"></script>
+    <script src="Q2.js"></script>
+    <script src="Q3.js"></script>
+    <script src="Q4.js"></script>
+    <script src="Q5.js"></script>
+    <script src="Q6.js"></script>
+    <script src="Q7.js"></script>
+    <script src="Q8.js"></script>
+    <script src="Q9.js"></script>
+  </body>
+</html>
