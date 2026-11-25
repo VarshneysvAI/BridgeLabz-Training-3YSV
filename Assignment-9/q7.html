@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q7 - Search Courses</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .course-list { display: grid; gap: 0.5rem; max-width: 42rem; padding: 0; list-style: none; }
+    .course { padding: 0.75rem; border: 1px solid #bbb; }
+    #search-count { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header><h1>Search Courses</h1></header>
+  <main>
+    <section aria-label="Course search">
+      <label for="course-search">Search courses</label>
+      <input id="course-search" type="search" autocomplete="off">
+      <button id="clear-search" type="button">Clear search</button>
+      <label><input id="hide-unmatched" type="checkbox"> Hide courses that do not match</label>
+      <p id="search-count" role="status">5 courses matched</p>
+      <ul id="course-list" class="course-list">
+        <li class="course"><span class="course-title">JavaScript Fundamentals</span> - Variables, functions, and modern syntax.</li>
+        <li class="course"><span class="course-title">Accessible Web Design</span> - Build inclusive web interfaces.</li>
+        <li class="course"><span class="course-title">Introduction to Python</span> - Learn programming with Python.</li>
+        <li class="course"><span class="course-title">Data Structures</span> - Explore arrays, maps, and trees.</li>
+        <li class="course"><span class="course-title">Frontend Testing</span> - Test user interfaces with confidence.</li>
+      </ul>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q7.js"></script>
+</body>
+</html>

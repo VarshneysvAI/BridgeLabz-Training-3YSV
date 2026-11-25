@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q3 - Interactive FAQ</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .faq-item { border-bottom: 1px solid #ccc; padding: 0.75rem 0; }
+    .faq-question { cursor: pointer; padding: 0.5rem; }
+    .faq-answer { display: none; padding: 0.5rem; }
+    .answer-input { display: block; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header><h1>Frequently Asked Questions</h1></header>
+  <main>
+    <section aria-label="FAQ">
+      <article class="faq-item">
+        <h2 class="faq-question">How do I create an account?</h2>
+        <div class="faq-answer"><p>Choose Sign Up and complete the registration form.</p><label>Follow-up <input class="answer-input" type="text"></label></div>
+      </article>
+      <article class="faq-item">
+        <h2 class="faq-question">How can I reset my password?</h2>
+        <div class="faq-answer"><p>Use the Forgot Password link on the sign-in page.</p><label>Follow-up <input class="answer-input" type="text"></label></div>
+      </article>
+      <article class="faq-item">
+        <h2 class="faq-question">Where can I find course materials?</h2>
+        <div class="faq-answer"><p>Open your course dashboard and select Materials.</p><label>Follow-up <input class="answer-input" type="text"></label></div>
+      </article>
+      <article class="faq-item">
+        <h2 class="faq-question">Can I change my profile details?</h2>
+        <div class="faq-answer"><p>Yes. Edit them from your account settings.</p><label>Follow-up <input class="answer-input" type="text"></label></div>
+      </article>
+      <article class="faq-item">
+        <h2 class="faq-question">How do I contact support?</h2>
+        <div class="faq-answer"><p>Use the Help page to send a message to support.</p><label>Follow-up <input class="answer-input" type="text"></label></div>
+      </article>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q3.js"></script>
+</body>
+</html>

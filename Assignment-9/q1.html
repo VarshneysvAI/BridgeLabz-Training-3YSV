@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q1 - Welcome Page Greeting</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    main { max-width: 42rem; }
+    #greeting { cursor: pointer; font-size: 1.5rem; }
+    #welcome-message { padding: 1rem; background: #eef6ff; }
+    button { margin: 0.25rem; padding: 0.5rem 0.75rem; }
+  </style>
+</head>
+<body>
+  <header><h1>Welcome to BridgeLabz</h1></header>
+  <main>
+    <section aria-labelledby="greeting-heading">
+      <h2 id="greeting-heading">A greeting for you</h2>
+      <p id="greeting" role="status" tabindex="0"></p>
+      <button id="change-greeting" type="button">Change Greeting</button>
+      <button id="toggle-welcome" type="button" aria-expanded="true">Toggle welcome message</button>
+      <p id="welcome-message">We are glad you are here. Explore, learn, and build something great!</p>
+    </section>
+  </main>
+  <footer><p>Have a productive day.</p></footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q1.js"></script>
+</body>
+</html>

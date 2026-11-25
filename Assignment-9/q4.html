@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q4 - Special Offer Banners</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .banner { margin: 1rem 0; padding: 1rem; background: #fff1bd; border: 1px solid #d5a500; }
+    .banner:not(:first-of-type) { display: none; }
+    .controls { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    button, select { padding: 0.45rem; }
+  </style>
+</head>
+<body>
+  <header><h1>Special Offers</h1></header>
+  <main>
+    <section aria-label="Banner controls">
+      <label for="banner-picker">Choose banner:</label>
+      <select id="banner-picker">
+        <option value="banner-1">Offer 1</option><option value="banner-2">Offer 2</option>
+        <option value="banner-3">Offer 3</option><option value="banner-4">Offer 4</option>
+        <option value="banner-5">Offer 5</option>
+      </select>
+      <div class="controls">
+        <button id="hide-banner" type="button">Hide</button>
+        <button id="show-banners" type="button">Show Hidden</button>
+        <button id="slide-banner" type="button">Slide Up/Down</button>
+        <button id="fade-in-banner" type="button">Fade In</button>
+        <button id="fade-out-banner" type="button">Fade Out</button>
+      </div>
+    </section>
+    <section id="banner-list" aria-label="Promotional banners">
+      <article class="banner" id="banner-1"><h2>Welcome offer</h2><p>Save 10% on your first order.</p></article>
+      <article class="banner" id="banner-2"><h2>Weekend special</h2><p>Free delivery this weekend.</p></article>
+      <article class="banner" id="banner-3"><h2>Learning bundle</h2><p>Get a discount when you bundle courses.</p></article>
+      <article class="banner" id="banner-4"><h2>Member reward</h2><p>Members earn extra reward points today.</p></article>
+      <article class="banner" id="banner-5"><h2>Limited-time deal</h2><p>Explore this week's featured products.</p></article>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q4.js"></script>
+</body>
+</html>

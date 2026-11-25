@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q8 - Dynamic Blog Posts</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .post-list { display: grid; gap: 1rem; padding: 0; list-style: none; }
+    .post { border: 1px solid #bbb; padding: 1rem; }
+    .post.featured { border: 2px solid #c47a00; background: #fff8df; }
+    .tag { display: inline-block; margin: 0.25rem; padding: 0.2rem 0.45rem; background: #e7f3ff; }
+    .post.highlighted { background: #fff1bd; }
+    .post-controls { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  </style>
+</head>
+<body>
+  <header><h1>Blog Post Manager</h1></header>
+  <main>
+    <section aria-label="Post controls">
+      <button id="add-post" type="button">Add New Post</button>
+      <button id="prepend-featured" type="button">Prepend Featured Post</button>
+      <button id="remove-last" type="button">Remove Last Post</button>
+      <label for="keyword-search">Highlight keyword</label>
+      <input id="keyword-search" type="search">
+    </section>
+    <section aria-label="Blog posts">
+      <ol id="post-list" class="post-list">
+        <li class="post"><h2>Building Better Habits</h2><p>Small routines can lead to lasting progress.</p><div class="post-tags"><span class="tag">habits</span></div><div class="post-controls"><button class="tag-before" type="button">Add tag before</button><button class="tag-after" type="button">Add tag after</button></div></li>
+        <li class="post"><h2>Learning JavaScript</h2><p>Practice the fundamentals with small projects.</p><div class="post-tags"><span class="tag">coding</span></div><div class="post-controls"><button class="tag-before" type="button">Add tag before</button><button class="tag-after" type="button">Add tag after</button></div></li>
+        <li class="post"><h2>Designing for Everyone</h2><p>Accessible design improves the experience for all.</p><div class="post-tags"><span class="tag">design</span></div><div class="post-controls"><button class="tag-before" type="button">Add tag before</button><button class="tag-after" type="button">Add tag after</button></div></li>
+        <li class="post"><h2>Keeping Teams in Sync</h2><p>Clear communication helps teams collaborate.</p><div class="post-tags"><span class="tag">teams</span></div><div class="post-controls"><button class="tag-before" type="button">Add tag before</button><button class="tag-after" type="button">Add tag after</button></div></li>
+        <li class="post"><h2>Testing Your Web App</h2><p>A good testing routine catches regressions early.</p><div class="post-tags"><span class="tag">testing</span></div><div class="post-controls"><button class="tag-before" type="button">Add tag before</button><button class="tag-after" type="button">Add tag after</button></div></li>
+      </ol>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q8.js"></script>
+</body>
+</html>

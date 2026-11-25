@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q10 - Registration Validation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    form { display: grid; gap: 0.75rem; max-width: 24rem; }
+    label { display: grid; gap: 0.25rem; }
+    input { border: 1px solid #777; padding: 0.5rem; }
+    #form-message { margin-top: 1rem; }
+    .error { color: #a40000; }
+    .success { color: #176b2c; }
+  </style>
+</head>
+<body>
+  <header><h1>Create an Account</h1></header>
+  <main>
+    <section aria-label="Registration form">
+      <p>Email uniqueness is checked against registrations made during this page session.</p>
+      <form id="registration-form" novalidate>
+        <label for="name">Name
+          <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error">
+          <span id="name-error" class="field-error"></span>
+        </label>
+        <label for="email">Email
+          <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+          <span id="email-error" class="field-error"></span>
+        </label>
+        <label for="password">Password
+          <input id="password" name="password" type="password" autocomplete="new-password" aria-describedby="password-error">
+          <span id="password-error" class="field-error"></span>
+        </label>
+        <button type="submit">Register</button>
+      </form>
+      <p id="form-message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q10.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q6 - Event Subscription Panel</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .topic-list { display: grid; gap: 0.5rem; max-width: 32rem; }
+    .topic-item { display: flex; justify-content: space-between; padding: 0.6rem; border: 1px solid #bbb; }
+    .topic-button.subscribed { background: #d7f5df; }
+    #messages { margin-top: 1rem; }
+    .success-message { color: #176b2c; }
+  </style>
+</head>
+<body>
+  <header><h1>Event Subscriptions</h1></header>
+  <main>
+    <section aria-label="Notification controls">
+      <button id="subscribe" type="button">Subscribe</button>
+      <button id="unsubscribe" type="button">Unsubscribe</button>
+      <p id="notification-status" role="status">Notifications are disabled.</p>
+    </section>
+    <section aria-labelledby="topics-heading">
+      <h2 id="topics-heading">Subscription topics</h2>
+      <div id="topic-list" class="topic-list">
+        <div class="topic-item"><button class="topic-button" type="button" aria-pressed="false">Product updates</button><button class="remove-topic" type="button">Remove</button></div>
+        <div class="topic-item"><button class="topic-button" type="button" aria-pressed="false">Learning events</button><button class="remove-topic" type="button">Remove</button></div>
+        <div class="topic-item"><button class="topic-button" type="button" aria-pressed="false">Weekly newsletter</button><button class="remove-topic" type="button">Remove</button></div>
+        <div class="topic-item"><button class="topic-button" type="button" aria-pressed="false">Community news</button><button class="remove-topic" type="button">Remove</button></div>
+        <div class="topic-item"><button class="topic-button" type="button" aria-pressed="false">Special offers</button><button class="remove-topic" type="button">Remove</button></div>
+      </div>
+      <form id="add-topic-form">
+        <label for="new-topic">New topic</label>
+        <input id="new-topic" type="text" required>
+        <button type="submit">Add topic</button>
+      </form>
+    </section>
+    <section id="messages" aria-label="Subscription messages" aria-live="polite"></section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q6.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q9 - Multi-jQuery Widgets</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .slides { min-height: 5rem; padding: 1rem; background: #eef6ff; }
+    .slide { display: none; }
+    .slide.active { display: block; }
+    .widget-list { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .widget { padding: 1rem; border: 1px solid #aaa; cursor: pointer; }
+    .widget.active { background: #d7f5df; outline: 2px solid #238636; }
+    #notification-modal { display: none; position: fixed; inset: 20% 15%; padding: 1.5rem; background: white; border: 2px solid #333; box-shadow: 0 0 0 100vmax #0008; }
+    .tooltip { display: none; color: #333; background: #fff1bd; padding: 0.25rem; }
+    #load-status { color: #8a1c1c; }
+  </style>
+</head>
+<body>
+  <header><h1>Dashboard Widgets</h1><p id="load-status" role="status"></p></header>
+  <main>
+    <section aria-labelledby="carousel-heading">
+      <h2 id="carousel-heading">Updates carousel (jQuery 3)</h2>
+      <div class="slides">
+        <p class="slide active">Update 1: Welcome to the dashboard.</p>
+        <p class="slide">Update 2: New learning paths are available.</p>
+        <p class="slide">Update 3: Check your weekly progress.</p>
+        <p class="slide">Update 4: Explore the community.</p>
+        <p class="slide">Update 5: Keep building your skills.</p>
+      </div>
+      <button id="previous-slide" type="button">Previous</button>
+      <button id="next-slide" type="button">Next</button>
+    </section>
+    <section aria-labelledby="widgets-heading">
+      <h2 id="widgets-heading">Widgets</h2>
+      <div class="widget-list">
+        <article class="widget"><h3>Progress</h3><button type="button" class="tooltip-target">Details</button><span class="tooltip">Your weekly learning progress.</span></article>
+        <article class="widget"><h3>Messages</h3><button type="button" class="tooltip-target">Details</button><span class="tooltip">You have new community messages.</span></article>
+        <article class="widget"><h3>Achievements</h3><button type="button" class="tooltip-target">Details</button><span class="tooltip">Review your latest achievements.</span></article>
+        <article class="widget"><h3>Upcoming events</h3><button type="button" class="tooltip-target">Details</button><span class="tooltip">See upcoming learning events.</span></article>
+        <article class="widget"><h3>Saved courses</h3><button type="button" class="tooltip-target">Details</button><span class="tooltip">Return to your saved courses.</span></article>
+      </div>
+      <button id="open-notification" type="button">Open notifications</button>
+    </section>
+    <section id="notification-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+      <h2 id="modal-heading">Notifications (jQuery 2)</h2>
+      <p>You are all caught up with your dashboard notifications.</p>
+      <button id="close-notification" type="button">Close</button>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q9.js"></script>
+</body>
+</html>

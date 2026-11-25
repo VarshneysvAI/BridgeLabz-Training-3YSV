@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q2 - Product Highlight</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    #products { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem; }
+    .product { border: 1px solid #bbb; border-radius: 0.5rem; padding: 1rem; cursor: pointer; }
+    .product[data-discount="true"] { border: 2px solid #c47a00; }
+    .product-details { color: #444; }
+    .favorite.selected { color: #b00020; background: #ffe4e8; }
+  </style>
+</head>
+<body>
+  <header><h1>Product Highlights</h1></header>
+  <main>
+    <section id="products" aria-label="Products">
+      <article class="product" data-discount="true" data-in-stock="true">
+        <h2>Canvas Backpack</h2><p>$39.99 - 20% off</p>
+        <p class="product-details" hidden>Water-resistant, 20-litre everyday backpack.</p>
+        <button class="favorite" type="button" aria-pressed="false" aria-label="Favorite Canvas Backpack">Favorite</button>
+      </article>
+      <article class="product" data-discount="false" data-in-stock="true">
+        <h2>Steel Bottle</h2><p>$18.50</p>
+        <p class="product-details" hidden>Reusable insulated bottle, 750 ml.</p>
+        <button class="favorite" type="button" aria-pressed="false" aria-label="Favorite Steel Bottle">Favorite</button>
+      </article>
+      <article class="product" data-discount="true" data-in-stock="true">
+        <h2>Wireless Mouse</h2><p>$24.00 - 10% off</p>
+        <p class="product-details" hidden>Compact mouse with adjustable sensitivity.</p>
+        <button class="favorite" type="button" aria-pressed="false" aria-label="Favorite Wireless Mouse">Favorite</button>
+      </article>
+      <article class="product" data-discount="false" data-in-stock="false">
+        <h2>Desk Lamp</h2><p>Currently out of stock</p>
+        <p class="product-details" hidden>LED lamp with three brightness settings.</p>
+        <button class="favorite" type="button" aria-pressed="false" aria-label="Favorite Desk Lamp">Favorite</button>
+      </article>
+      <article class="product" data-discount="true" data-in-stock="true">
+        <h2>Notebook Set</h2><p>$12.00 - 15% off</p>
+        <p class="product-details" hidden>Five ruled notebooks made with recycled paper.</p>
+        <button class="favorite" type="button" aria-pressed="false" aria-label="Favorite Notebook Set">Favorite</button>
+      </article>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q2.js"></script>
+</body>
+</html>

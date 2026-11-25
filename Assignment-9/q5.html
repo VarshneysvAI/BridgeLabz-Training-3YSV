@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q5 - Team Directory</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .department { margin: 1.5rem 0; padding: 1rem; border: 1px solid #aaa; }
+    .department h2 { cursor: pointer; }
+    .employee-row { display: inline-block; vertical-align: top; width: 10rem; margin: 0.5rem; }
+    .employee { padding: 0.75rem; border: 1px solid #bbb; background: #f7f7f7; cursor: pointer; }
+    .contact-info { display: none; margin: 0.25rem 0; }
+    .manager { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header><h1>Team Members</h1></header>
+  <main>
+    <button id="random-employee" type="button">Select a random employee</button>
+    <section class="department" id="engineering">
+      <h2>Engineering Department</h2>
+      <button class="team-toggle" type="button" aria-expanded="true">Collapse/expand team</button>
+      <div class="employee-row"><article class="employee manager" data-employee-id="eng-manager"><h3>Riya Shah (Manager)</h3></article><p class="contact-info">riya.shah@example.com</p></div>
+      <div class="employee-row"><article class="employee" data-manager="eng-manager"><h3>Arun Patel</h3></article><p class="contact-info">arun.patel@example.com</p></div>
+      <div class="employee-row"><article class="employee" data-manager="eng-manager"><h3>Meera Das</h3></article><p class="contact-info">meera.das@example.com</p></div>
+      <div class="employee-row"><article class="employee" data-manager="eng-manager"><h3>Kabir Rao</h3></article><p class="contact-info">kabir.rao@example.com</p></div>
+      <div class="employee-row"><article class="employee" data-manager="eng-manager"><h3>Isha Nair</h3></article><p class="contact-info">isha.nair@example.com</p></div>
+    </section>
+    <section class="department" id="design">
+      <h2>Design Department</h2>
+      <button class="team-toggle" type="button" aria-expanded="true">Collapse/expand team</button>
+      <div class="employee-row"><article class="employee manager" data-employee-id="design-manager"><h3>Dev Menon (Manager)</h3></article><p class="contact-info">dev.menon@example.com</p></div>
+      <div class="employee-row"><article class="employee" data-manager="design-manager"><h3>Leena Roy</h3></article><p class="contact-info">leena.roy@example.com</p></div>
+      <div class="employee-row"><article class="employee" data-manager="design-manager"><h3>Omar Ali</h3></article><p class="contact-info">omar.ali@example.com</p></div>
+      <div class="employee-row"><article class="employee" data-manager="design-manager"><h3>Neha Jain</h3></article><p class="contact-info">neha.jain@example.com</p></div>
+      <div class="employee-row"><article class="employee" data-manager="design-manager"><h3>Vikram Sen</h3></article><p class="contact-info">vikram.sen@example.com</p></div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q5.js"></script>
+</body>
+</html>
