@@ -1,0 +1,9 @@
+{
+  "products": [
+    { "id": 1, "name": "Wireless Headphones", "price": 59.99, "image": "https://placehold.co/240x160?text=Headphones" },
+    { "id": 2, "name": "Mechanical Keyboard", "price": 89.50, "image": "https://placehold.co/240x160?text=Keyboard" },
+    { "id": 3, "name": "USB-C Hub", "price": 34.00, "image": "https://placehold.co/240x160?text=USB-C+Hub" },
+    { "id": 4, "name": "Laptop Stand", "price": 42.75, "image": "https://placehold.co/240x160?text=Laptop+Stand" },
+    { "id": 5, "name": "Webcam", "price": 74.25, "image": "https://placehold.co/240x160?text=Webcam" }
+  ]
+}

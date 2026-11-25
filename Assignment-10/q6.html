@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q6 - User Registration</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    main { max-width: 32rem; margin: auto; }
+    form { display: grid; gap: 0.8rem; }
+    label { display: grid; gap: 0.25rem; }
+    input { padding: 0.55rem; }
+    #registration-message { min-height: 1.5rem; }
+    .success { color: #176b2c; }
+    .error { color: #a40000; }
+  </style>
+</head>
+<body>
+  <header><h1>User Registration</h1></header>
+  <main>
+    <section aria-label="Registration form">
+      <p>This demo checks and stores sample registrations in the local JSON Server database.</p>
+      <form id="registration-form">
+        <label for="name">Name
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </label>
+        <label for="email">Email
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </label>
+        <button id="submit-registration" type="submit">Register</button>
+      </form>
+      <p id="registration-message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js"></script>
+  <script src="q6.js"></script>
+</body>
+</html>

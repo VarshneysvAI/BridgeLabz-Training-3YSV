@@ -1,0 +1,9 @@
+{
+  "tasks": [
+    { "id": 1, "title": "Review project brief", "priority": "high", "completed": false },
+    { "id": 2, "title": "Update team notes", "priority": "medium", "completed": false },
+    { "id": 3, "title": "Organize design files", "priority": "low", "completed": true },
+    { "id": 4, "title": "Prepare release checklist", "priority": "high", "completed": true },
+    { "id": 5, "title": "Schedule a planning session", "priority": "medium", "completed": false }
+  ]
+}

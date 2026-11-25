@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q2 - Employee Status Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    main { max-width: 48rem; margin: auto; }
+    .employee-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.75rem; border-bottom: 1px solid #ccc; }
+    .employee-status.active { color: #176b2c; }
+    .employee-status.inactive { color: #8a1c1c; }
+    #error-message { color: #a40000; }
+  </style>
+</head>
+<body>
+  <header><h1>Employee Status Dashboard</h1></header>
+  <main>
+    <section aria-labelledby="employees-heading">
+      <h2 id="employees-heading">Employees</h2>
+      <p id="loading-message" role="status">Loading employees...</p>
+      <p id="error-message" role="alert"></p>
+      <div id="employee-list"></div>
+    </section>
+  </main>
+  <script src="q2.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q4 - Multi-API Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    main { max-width: 56rem; margin: auto; }
+    #metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1rem; }
+    .metric { padding: 1rem; border: 1px solid #bbb; border-radius: 0.5rem; }
+    .metric-value { font-size: 1.75rem; font-weight: bold; }
+    .skeleton { color: transparent; background: #e3e3e3; border-radius: 0.25rem; }
+    #dashboard-warning { color: #8a4b00; }
+  </style>
+</head>
+<body>
+  <header><h1>Multi-API Dashboard</h1></header>
+  <main>
+    <section id="metrics" aria-label="Dashboard totals" aria-busy="true">
+      <article class="metric"><h2>Total users</h2><p id="user-count" class="metric-value skeleton">Loading</p></article>
+      <article class="metric"><h2>Total orders</h2><p id="order-count" class="metric-value skeleton">Loading</p></article>
+      <article class="metric"><h2>Total products</h2><p id="product-count" class="metric-value skeleton">Loading</p></article>
+    </section>
+    <p id="dashboard-warning" role="status"></p>
+  </main>
+  <script src="q4.js"></script>
+</body>
+</html>

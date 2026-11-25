@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q3 - Task Manager</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    main { max-width: 48rem; margin: auto; }
+    li { padding: 0.65rem; border-bottom: 1px solid #ccc; }
+    .priority { text-transform: capitalize; margin-left: 0.5rem; }
+    .completed { text-decoration: line-through; color: #555; }
+    #task-error { color: #a40000; }
+  </style>
+</head>
+<body>
+  <header><h1>Task Manager</h1></header>
+  <main>
+    <section aria-label="Task filters">
+      <label for="task-filter">Show tasks</label>
+      <select id="task-filter">
+        <option value="all">All tasks</option>
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+        <option value="completed">Completed</option>
+      </select>
+      <p id="task-error" role="alert"></p>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q3.js"></script>
+</body>
+</html>
